@@ -19,6 +19,7 @@ namespace Task_1
 
         public static void Averages(string string_input)
         {
+            Console.WriteLine();
             Console.WriteLine("Averages");
             Console.WriteLine(string_input);
             char[] symbol = new char[] { ' ', ',', '.', '!', '?' };
@@ -39,6 +40,7 @@ namespace Task_1
 
         public static void Doubler(string string_input, string string_word)
         {
+            Console.WriteLine();
             Console.WriteLine("Doubler");
             Console.WriteLine(string_input + ", " + string_word);
             string rezult = "";
@@ -59,6 +61,7 @@ namespace Task_1
 
         public static void LowerCase(string string_input, bool separator_only_space)
         {
+            Console.WriteLine();
             Console.WriteLine("LowerCase");
             Console.WriteLine(string_input + ", " + separator_only_space);
             char[] symbol = new char[] { ' ' };
@@ -74,6 +77,7 @@ namespace Task_1
 
         public static void Validator(string string_input)
         {
+            Console.WriteLine();
             Console.WriteLine("Validator");
             Console.WriteLine(string_input);
             StringBuilder stringBuilder = new StringBuilder(string_input);
