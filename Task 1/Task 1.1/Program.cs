@@ -10,19 +10,47 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
+            Menu();
+        }
+
+        public static void Menu()
+        {
             Console.ForegroundColor = ConsoleColor.Green;
-
-
-            Rectangle();
-            //Triangle();
-            //Another_Triangle();
-            //X_Mas_Tree();
-            //Sum_Of_Numbers();
-            //Font_Adjustment();
-            //Array_Processing();
-            //No_Positive();
-            //Non_Negative_Sum();
-            //Array_2D();
+            Console.WriteLine("Rectangle");
+            Console.WriteLine("Triangle");
+            Console.WriteLine("Another Triangle");
+            Console.WriteLine("X Mas Tree");
+            Console.WriteLine("Sum Of Numbers");
+            Console.WriteLine("Font Adjustment");
+            Console.WriteLine("Array Processing");
+            Console.WriteLine("No Positive");
+            Console.WriteLine("Non Negative_Sum");
+            Console.WriteLine("Array 2D");
+            switch (Console.ReadLine())
+            {
+                case "Rectangle":
+                    Rectangle(); break;
+                case "Triangle":
+                    Triangle(); break;
+                case "Another Triangle":
+                    Another_Triangle(); break;
+                case "X Mas Tree":
+                    X_Mas_Tree(); break;
+                case "Sum Of Numbers":
+                    Sum_Of_Numbers(); break;
+                case "Font Adjustment":
+                    Font_Adjustment(); break;
+                case "Array Processing":
+                    Array_Processing(); break;
+                case "No Positive":
+                    No_Positive(); break;
+                case "Non Negative_Sum":
+                    Non_Negative_Sum(); break;
+                case "Array 2D":
+                    Array_2D(); break;
+                default:
+                    Console.WriteLine("Incorrect data entered"); break;
+            }
         }
 
         public static void Rectangle()
