@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Task 6.1</title>
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        background-color: #4E6379;
+      }
+      .block{
+        width: 800px;
+        margin: 10px auto;
+        padding: 10px;
+        background-color: #FFFFFF;
+        border-radius: 7px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .block > .line{
+        height: 160px;
+        width: 2px;
+        background-color: #4E6379;
+        opacity: 0.5;
+      }
+      .content{
+        background-color: #FFFFFF;
+        text-align: center;
+        align-content: center;
+        width: 240px;
+      }
+      .content > *{
+        display: block;
+        margin: 0 auto;
+        font-family: sans-serif;
+      }
+      .content > img{
+        width: 60px;
+        height: 60px;
+      }
+      .content > h1{
+        color: #F56332;
+        font-size: 120%;
+        margin: 10px;
+      }
+      .content > span{
+        margin: 10px;
+      }
+      .content > a{
+        text-decoration: none;
+        font-size: 90%;
+        color: #FFFFFF;
+        background-color: #F56332;
+        border-radius: 2px;
+        padding: 7px;
+        width: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block">
+        <div class="content">
+          <img src="https://image.flaticon.com/icons/png/512/622/622379.png" alt="">
+          <h1>Виртуальный хостинг</h1>
+          <span>3.95$ в месяц</span>
+          <a href="#">Подробнее</a>
+        </div>
+        <div class="line"></div>
+        <div class="content">
+          <img src="https://image.flaticon.com/icons/png/512/3470/3470441.png" alt="">
+          <h1>Облачный хостинг</h1>
+          <span>68.95$ в месяц</span>
+          <a href="#">Подробнее</a>
+        </div>
+        <div class="line"></div>
+        <div class="content">
+          <img src="https://image.flaticon.com/icons/png/512/860/860276.png" alt="">
+          <h1>Выделенный сервер</h1>
+          <span>217.95$ в месяц</span>
+          <a href="#">Подробнее</a>
+        </div>
+    </div>
+  </body>
+</html>

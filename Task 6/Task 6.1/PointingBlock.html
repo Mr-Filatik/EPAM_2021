@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Task 6.1</title>
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+        background-color: #333333;
+      }
+      .bar{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .block {
+        width: 100%;
+        position: relative;
+        border: 3px solid #C2E1F5;
+        background-color: #88B7D5;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 50px;
+        padding: 20px 0px 20px 0px;
+      }
+      .block::before, .block::after {
+        content: '';
+        border: 40px solid transparent;
+        bottom: 60px;
+        border-bottom: 40px solid #C2E1F5;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+      .block::after {
+        border-bottom: 40px solid #88B7D5;
+        bottom: 55px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bar">
+      <div class="block">
+        Дистанции огромного размера
+      </div>
+    </div>
+  </body>
+</html>

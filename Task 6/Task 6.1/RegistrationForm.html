@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Task 6.1</title>
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .form{
+        width: 350px;
+        height: 275px;
+        background-color: #0690CF;
+        border: 3px solid #0075B2;
+        margin: 10px;
+        color: #FFFFFF;
+        font-family: sans-serif;
+      }
+      .form > span{
+        font-size: 140%;
+        display: block;
+        margin: 18px 10px 10px 20px;
+      }
+      .form > div{
+        margin: 30px 10px 0px 20px;
+        display: inline-block;
+      }
+      input{
+        width: 134px;
+        height: 18px;
+        display: block;
+      }
+      #inputEmail{
+        width: 306px;
+      }
+      #inputButton{
+        width: 90px;
+        height: 26px;
+        background-color: #FFDF7F;
+        border: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form" action="" method="post">
+      <span>Регистрация</span>
+      <hr>
+      <div>
+        <label for="Email">E-mail</label>
+        <input id="inputEmail" type="text" name="" value="">
+      </div>
+      <div>
+        <label for="Password">Пароль</label>
+        <input type="text" name="Password" value="">
+      </div>
+      <div>
+        <label for="PasswordConfirm">Ещё раз</label>
+        <input type="text" name="PasswordConfirm" value="">
+      </div>
+      <div>
+        <input id="inputButton" type="submit" name="button" value="Отправить">
+      </div>
+    </form>
+  </body>
+</html>
